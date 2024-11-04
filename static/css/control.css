@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url('/static/img/Background2.png');
+    background-size: cover; /* Asegura que la imagen cubra toda el área */
+    background-attachment: fixed; /* Mantiene la imagen fija al hacer scroll */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center; /* Centra la imagen */
+    height: 100vh; /* Asegura que el cuerpo tenga al menos la altura de la ventana */
+    overflow: auto; /* Asegura que el contenido se desplace correctamente */
+}
+
+
+body, html {
+    height: 100%;
+}
+
+h1 {
+    font-size: 30px;
+    margin-bottom: 1.5rem;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 20;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 60px;
+}
+
+.navbar-brand {
+    color: white !important;
+}
+
+.label-input {
+    display: flex;
+    align-items: center;
+}
+
+.label-input input {
+    margin-left: 10px;
+    color: white;
+}
+
+.no-padding-margin {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    width: auto;
+    min-width: 100px;
+    max-width: 100px;
+    text-align: center;
+}
+
+.btn {
+    padding: 5px 8px;
+    font-size: 0.90rem !important;
+    border-radius: 5px;
+}
+
+.btn-purple {
+    background-color: #9e308e;
+    border: none;
+    color: white;
+    font-size: 1rem;
+}
+
+.btn-purple:hover {
+    background-color: #b84da8;
+    color: white;
+}
+
+.btn-white {
+    background-color: white;
+    color: black;
+    border: 1px solid #ccc;
+}
+
+.btn-white:hover {
+    background-color: #f0f0f0;
+}
+
+.background-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Esto asegura que el contenedor de fondo ocupe al menos la altura de la ventana */
+    position: relative;
+    z-index: 2; /* Mantiene el contenido sobre la imagen de fondo */
+    flex-direction: column;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.text-container {
+    position: relative;
+    z-index: 2;
+    color: white;
+    width: 300px;
+    text-align: center;
+}
+
+.remote-control {
+    position: relative;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 20px 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.square-button {
+    width: 60px;
+    height: 60px;
+    padding: 0;
+}
+
+.icon {
+    width: 30px;
+    height: auto;
+}
+
+.active-border {
+    border: 4px solid #ffe604;
+}
+
+.custom-gap {
+    gap: 20rem;
+}
+
+.carrito {
+    width: auto;
+    height: 350px;
+}
+
+/* LEDs de overlay */
+.overlay-led1 {
+    position: absolute;
+    top: 10%;
+    left: 25%;
+    z-index: 1;
+}
+
+.overlay-led2 {
+    position: absolute;
+    top: 10%;
+    left: 69%;
+    z-index: 1;
+}
+
+.overlay-led3 {
+    position: absolute;
+    top: 65%;
+    left: 25%;
+    z-index: 1;
+}
+
+.overlay-led4 {
+    position: absolute;
+    top: 65%;
+    left: 69%;
+    z-index: 1;
+}
+
+.container-tabla {
+    position: relative;
+    z-index: 5;
+}
+
+.data-section {
+    position: relative;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.6);
+    margin-top: 50px;
+    border-radius: 8px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 10;
+}
+
+.overlay-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
